@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Clarear | Limpeza Pós-Obra, Faxinas e Vidros/ACM com Água Desmineralizada</title>
+  <meta name="description" content="Clarear: limpeza pós-obra, faxinas e planos mensais de limpeza de vidros e ACM com água desmineralizada em Florianópolis e região. Orçamento via WhatsApp." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.seudominio.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Clarear | Excelência em Limpeza" />
+  <meta property="og:description" content="Pós-obra, faxinas e vidros/ACM com água desmineralizada. Planos mensais para empresas e condomínios." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://www.seudominio.com.br/" />
+
+  <!-- Schema Local -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CleaningService",
+    "name":"Clarear",
+    "url":"https://www.seudominio.com.br/",
+    "telephone":"+55 48 99999-9999",
+    "areaServed":["Florianópolis","São José","Palhoça","Biguaçu","Grande Florianópolis"],
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Florianópolis",
+      "addressRegion":"SC",
+      "addressCountry":"BR"
+    },
+    "openingHours":"Mo-Fr 08:00-18:00"
+  }
+  </script>
+
+  <style>
+    :root{
+      /* Base (estilo Seven - dark) */
+      --bg:#C4D3FF;
+      
+      --card: #3486a6;
+      --card2: #3486a6;
+
+      
+
+      --border: rgba(248,250,252,.14);
+      --shadow: 0 18px 55px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1140px;
+
+      /* Marca Clarear (azul água) */
+      --brand: #3486a6;
+      --brand2: #0ea5e9;
+      --brandSoft: rgba(47,180,232,.16);
+
+      /* WhatsApp CTA */
+      --whats: #25D366;
+      --whatsHover: #1EBE5D;
+    }
+
+    *{ box-sizing:border-box }
+    html,body{ margin:0; padding:0; background:var(--bg); color:#0AD4F5;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+    }
+    a{ color:inherit; text-decoration:none }
+    .container{ width:100%; max-width:var(--max); margin:0 auto; padding:0 18px; }
+
+    /* Topbar */
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: #90D9FF;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.197);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 0; gap: 14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap: 10px;
+      font-weight: 950; letter-spacing: .2px;
+    }
+    
+    
+    .logo img{
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+      display:block;
+      border-radius: 10px;
+      border: rgba(0, 0, 0, 0.263) 1px solid;
+    }
+    .brand small{
+      display:block; margin-top:2px;
+      font-weight: 750;
+      color: #5A96FF;
+      letter-spacing: .1px;
+    }
+
+    .navlinks{ display:flex; gap: 14px; align-items:center; flex-wrap:wrap; }
+    .navlinks a{ color: #5A96FF; font-weight: 850; font-size: 14px; }
+    .navlinks a:hover{ color: #1BA8FF; }
+
+    /* Buttons */
+    .btn{
+      border:none; cursor:pointer;
+      border-radius: 999px;
+      padding: 12px 16px;
+      font-weight: 950;
+      display:inline-flex; align-items:center; gap:10px;
+      transition: transform .08s ease, background-color .15s ease, opacity .2s ease;
+      white-space: nowrap;
+    }
+    .btn:active{ transform: scale(.98); }
+
+    .btn-primary{
+      background: var(--whats);
+      color: #07110b;
+      box-shadow: 0 12px 28px rgba(37,211,102,.22);
+    }
+    .btn-primary:hover{ background: var(--whatsHover); }
+
+    .btn-ghost{
+      background: white;
+      color: var(--text);
+      border: 1px solid rgba(0, 0, 0, 0.578);
+    }
+    .btn-ghost:hover{ background: rgba(248,250,252,.10);color: white; }
+
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(248,250,252,.06);
+      color: var(--text);
+      font-weight: 850;
+      font-size: 13px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: var(--brandSoft);
+      border:1px solid rgba(47,180,232,.25);
+      color: var(--text);
+      font-weight: 950;
+      font-size: 12px;
+    }
+
+    /* Hero */
+    .hero{ padding: 44px 0 18px; }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+    @media (max-width: 940px){ .hero-grid{ grid-template-columns: 1fr; } }
+
+    h1{
+      margin: 14px 0 12px;
+      font-size: clamp(30px, 4.2vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -0.6px;
+    }
+    .sub{
+      color: var(--muted);
+      font-size: clamp(15px, 1.5vw, 18px);
+      line-height: 1.6;
+      margin: 0 0 18px;
+    }
+    .hero-actions{ display:flex; gap: 12px; flex-wrap:wrap; margin: 14px 0 8px; }
+
+    .trust-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top: 14px; }
+    .trust{
+      display:flex; gap:10px; align-items:flex-start;
+      padding: 12px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--border);
+      flex: 1; min-width: 240px;
+    }
+    .trust b{ display:block; }
+    .trust span{ color: var(--muted2); font-size: 13px; line-height: 1.45; }
+    .icon{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      background: var(--brandSoft);
+      border: 1px solid rgba(47,180,232,.28);
+      display:grid; place-items:center;
+      color: var(--text);
+      font-weight: 1000;
+      flex: 0 0 auto;
+    }
+
+    /* Card / Form */
+    .card{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card-head{
+      padding: 18px 18px 12px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+    }
+    .card-head h3{ margin:0 0 6px; font-size: 18px; }
+    .card-head p{ margin:0; color: var(--muted2); font-size: 13px; line-height: 1.5; }
+
+    form{ padding: 16px 18px 18px; display:grid; gap:10px; }
+    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+    @media (max-width: 480px){ .grid2{ grid-template-columns: 1fr; } }
+
+    input,select,textarea{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(248,250,252,.16);
+      background: rgba(8,12,20,.55);
+      color: var(--text);
+      outline:none;
+      font-weight: 750;
+    }
+    textarea{ min-height: 92px; resize: vertical; }
+    input::placeholder, textarea::placeholder{ color: rgba(248,250,252,.55); }
+    .small{ font-size: 12px; color: var(--muted2); line-height: 1.5; }
+
+    /* Sections */
+    section{ padding: 34px 0; }
+    .section-title{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:14px; flex-wrap:wrap;
+      margin-bottom: 14px;
+    }
+    .section-title h2{ margin:0; font-size: 26px; letter-spacing: -0.3px; }
+    .section-title p{ margin:0; color: var(--muted); max-width: 760px; line-height: 1.6; }
+
+    .cards{
+      display:grid; gap:12px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 980px){ .cards{ grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px){ .cards{ grid-template-columns: 1fr; } }
+
+    .mini{
+      padding: 16px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+    }
+    .mini b{ display:block; margin-bottom: 6px; }
+    .mini p{ margin:0; color: var(--muted2); font-size: 13px; line-height: 1.55; }
+
+    /* Portfolio grid (4 cards quadrados) */
+    .work-grid{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 980px){ .work-grid{ grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px){ .work-grid{ grid-template-columns: 1fr; } }
+
+    .work-card{
+      border-radius: var(--radius);
+      overflow:hidden;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 10px 35px rgba(0,0,0,.25);
+      display:flex; flex-direction:column;
+    }
+    .work-media{
+      width:100%;
+      aspect-ratio: 1 / 1;
+      background: rgba(255,255,255,.06);
+      overflow:hidden;
+    }
+    .work-media img{
+      width:100%; height:100%;
+      object-fit: cover;
+      display:block;
+      transition: transform .25s ease;
+    }
+    .work-card:hover .work-media img{ transform: scale(1.04); }
+    .work-caption{ padding: 12px 12px 14px; }
+    .work-caption b{ display:block; margin-bottom: 4px; }
+    .work-caption p{
+      margin:0;
+      color: var(--muted2);
+      font-size: 13px; line-height: 1.35;
+      display:-webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow:hidden;
+    }
+
+    /* Reviews */
+    .reviews{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 980px){ .reviews{ grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px){ .reviews{ grid-template-columns: 1fr; } }
+
+    .review-card{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+      overflow:hidden;
+      box-shadow: 0 10px 35px rgba(0,0,0,.22);
+      display:flex;
+      flex-direction:column;
+      min-height: 240px;
+    }
+    .review-top{
+      display:flex; gap:12px; align-items:center;
+      padding: 14px 14px 10px;
+      background: rgba(255,255,255,.06);
+      border-bottom: 1px solid var(--border);
+    }
+    .avatar{
+      width: 52px; height: 52px;
+      border-radius: 16px;
+      border: 1px solid rgba(248,250,252,.18);
+      overflow:hidden;
+      flex: 0 0 auto;
+      background: rgba(255,255,255,.08);
+    }
+    .avatar img{ width:100%; height:100%; object-fit: cover; display:block; }
+    .review-meta b{ display:block; font-weight: 1000; }
+    .review-meta span{ display:block; color: var(--muted2); font-size: 12px; margin-top: 2px; line-height: 1.25; }
+    .stars{
+      margin-left:auto;
+      display:inline-flex; gap:2px;
+      font-size: 14px;
+      color: #fbbf24;
+      user-select:none;
+      font-weight: 900;
+    }
+    .review-body{
+      padding: 14px;
+      color: var(--text);
+      line-height: 1.6;
+      font-weight: 650;
+      flex: 1;
+    }
+    .review-footer{
+      padding: 12px 14px;
+      border-top: 1px solid var(--border);
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      color: var(--muted2);
+      font-size: 12px;
+      background: rgba(255,255,255,.05);
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 7px 10px;
+      border-radius:999px;
+      border: 1px solid rgba(47,180,232,.28);
+      background: var(--brandSoft);
+      color: var(--text);
+      font-weight: 950;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    /* FAQ */
+    details{
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+      padding: 14px 14px;
+    }
+    details + details{ margin-top: 10px; }
+    summary{ cursor:pointer; font-weight: 1000; }
+    details p{ margin: 10px 0 0; color: var(--muted2); line-height: 1.6; }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 42px;
+      border-top: 1px solid var(--border);
+      color: var(--muted2);
+      background: rgba(255,255,255,.04);
+      margin-top: 10px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+    }
+    @media (max-width: 860px){ .footer-grid{ grid-template-columns: 1fr; } }
+    .footer-grid b{ color: var(--text); }
+    .sep{ height:1px; background: var(--border); margin: 14px 0; }
+
+    /* Floating CTA */
+    .float{
+      position: fixed; right: 16px; bottom: 16px; z-index: 60;
+      display:flex; flex-direction:column; gap:10px;
+    }
+    .toast{
+      position:fixed; left:50%; transform:translateX(-50%);
+      bottom:16px; z-index:70;
+      background: rgba(0,0,0,.75);
+      border: 1px solid rgba(248,250,252,.18);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-weight: 900;
+      display:none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand" aria-label="Clarear">
+          <div class="logo" aria-hidden="true">
+            <img src="imagens/logo-clarear02.jpeg" alt="Clarear - Excelência em Limpeza">
+          </div>
+          <div>
+           
+          </div>
+        </div>
+
+        <div class="navlinks" aria-label="Atalhos">
+          <a href="#servicos" class="btn btn-ghost">Serviços</a>
+          <a href="#portfolio" class="btn btn-ghost">Trabalhos</a>
+          <a href="#avaliacoes" class="btn btn-ghost">Depoimentos</a>
+          <a href="#faq" class="btn btn-ghost">FAQ</a>
+          <a href="#contato" class="btn btn-ghost">Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="pill">📍 Florianópolis e Região • Atendimento via WhatsApp</span>
+
+          <h1>Limpeza Pós-Obra, Faxinas e Vidros/ACM com Água Desmineralizada</h1>
+          <p class="sub">
+            Limpeza com padrão profissional para <b>obras, empresas, condomínios e residências</b>.
+            Nosso diferencial: <b>água desmineralizada</b> na limpeza de vidros e ACM — mais brilho, menos manchas e acabamento superior.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="ctaHeroWhats" href="#" rel="nofollow">💬 Solicitar orçamento no WhatsApp</a>
+            <span class="badge">Retorno rápido • Agenda organizada</span>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Pós-obra detalhada</b>
+                <span>Remoção de poeira fina, resíduos e acabamento para entrega do ambiente.</span>
+              </div>
+            </div>
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Vidros e fachadas sem manchas</b>
+                <span>Água desmineralizada ajuda a reduzir marcas e melhora o resultado final.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Planos mensais</b>
+                <span>Ideal para empresas e condomínios: rotina de limpeza de vidros/ACM.</span>
+              </div>
+            </div>
+            <div class="trust">
+              <div class="icon">✓</div>
+              <div>
+                <b>Equipe e padronização</b>
+                <span>Processo consistente, comunicação clara e capricho na entrega.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM CARD -->
+        <aside class="card" id="contato">
+          <div class="card-head">
+            <h3>Peça um orçamento (rápido)</h3>
+            <p>Preencha em 30 segundos e envie direto no WhatsApp.</p>
+          </div>
+
+          <form id="leadForm" autocomplete="on">
+            <div class="grid2">
+              <input required name="nome" placeholder="Seu nome" />
+              <input required name="telefone" placeholder="WhatsApp (DDD)" inputmode="tel" />
+            </div>
+
+            <div class="grid2">
+              <select required name="tipo">
+                <option value="" disabled selected>Tipo de cliente</option>
+                <option>Empresa</option>
+                <option>Condomínio</option>
+                <option>Residencial</option>
+                <option>Obra / Construtora</option>
+              </select>
+
+              <select required name="servico">
+                <option value="" disabled selected>Serviço principal</option>
+                <option>Limpeza pós-obra</option>
+                <option>Faxina residencial</option>
+                <option>Faxina comercial</option>
+                <option>Limpeza de vidros (água desmineralizada)</option>
+                <option>Limpeza de fachada / ACM (água desmineralizada)</option>
+                <option>Plano mensal (vidros/ACM)</option>
+              </select>
+            </div>
+
+            <input name="cidade" placeholder="Cidade (ex.: Florianópolis)" />
+            <textarea name="mensagem" placeholder="Descreva: metragem/altura, quantidade de panos/vidros, urgência, local..."></textarea>
+
+            <button class="btn btn-primary" type="submit">✅ Enviar no WhatsApp</button>
+
+            <div class="small">
+              Você será direcionado ao WhatsApp com a mensagem pronta.<br/>
+              Atendemos: <b>Florianópolis, São José, Palhoça e Biguaçu</b>.
+            </div>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Serviços de limpeza</h2>
+          <p>Foco em capricho, acabamento e padrão. Do pós-obra ao plano mensal.</p>
+        </div>
+        <a class="btn btn-primary" id="ctaServicesWhats" href="#" rel="nofollow">💬 Orçar no WhatsApp</a>
+      </div>
+
+      <div class="cards">
+        <div class="mini">
+          <b>Limpeza pós-obra</b>
+          <p>Detalhamento para entrega do ambiente: poeira fina, resíduos e acabamento.</p>
+        </div>
+        <div class="mini">
+          <b>Faxinas</b>
+          <p>Residencial e comercial, com checklist e foco em resultado.</p>
+        </div>
+        <div class="mini">
+          <b>Vidros com água desmineralizada</b>
+          <p>Melhor acabamento e menos manchas (ótimo para fachadas e altura).</p>
+        </div>
+        <div class="mini">
+          <b>Fachadas e ACM</b>
+          <p>Limpeza técnica para manter aparência e conservação do material.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Trabalhos realizados</h2>
+          <p>Troque as imagens abaixo pelas fotos reais da Clarear e adicione uma legenda curta.</p>
+        </div>
+        <a class="btn btn-ghost" href="#contato">✍️ Pedir orçamento</a>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-media"><img src="images/obra-1.jpg" alt="Limpeza pós-obra - acabamento final" loading="lazy"></div>
+          <div class="work-caption"><b>Pós-obra (acabamento)</b><p>Entrega do ambiente com limpeza fina e detalhamento.</p></div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media"><img src="images/obra-2.jpg" alt="Limpeza de vidros com água desmineralizada" loading="lazy"></div>
+          <div class="work-caption"><b>Vidros (água desmineralizada)</b><p>Mais brilho e menos manchas no resultado final.</p></div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media"><img src="images/obra-3.jpg" alt="Limpeza de fachada e ACM" loading="lazy"></div>
+          <div class="work-caption"><b>Fachada / ACM</b><p>Limpeza técnica para manter estética e conservação.</p></div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-media"><img src="images/obra-4.jpg" alt="Faxina comercial" loading="lazy"></div>
+          <div class="work-caption"><b>Faxina comercial</b><p>Rotina com checklist e padrão de limpeza profissional.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="avaliacoes">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>O que nossos clientes dizem</h2>
+          <p>Relatos reais fortalecem confiança e aumentam conversão. Use cards com foto do cliente quando possível.</p>
+        </div>
+        <a class="btn btn-primary" id="ctaReviewsWhats" href="#" rel="nofollow">💬 Quero um orçamento</a>
+      </div>
+
+      <div class="reviews" id="reviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Perguntas frequentes</h2>
+          <p>Isso reduz objeções e acelera a decisão.</p>
+        </div>
+      </div>
+
+      <details>
+        <summary>Vocês fazem limpeza pós-obra completa?</summary>
+        <p>Sim. Fazemos limpeza pós-obra com foco em acabamento, removendo poeira fina e resíduos para entrega do ambiente.</p>
+      </details>
+
+      <details>
+        <summary>O que é água desmineralizada e por que melhora o resultado?</summary>
+        <p>É água sem minerais que deixam marcas. Ela ajuda a reduzir manchas e melhora o acabamento na limpeza de vidros e ACM.</p>
+      </details>
+
+      <details>
+        <summary>Vocês trabalham com planos mensais para empresas e condomínios?</summary>
+        <p>Sim. Temos planos mensais para manutenção de vidros, fachadas e ACM, com agenda fixa e padrão de entrega.</p>
+      </details>
+
+      <details>
+        <summary>Quais cidades vocês atendem?</summary>
+        <p>Florianópolis, São José, Palhoça, Biguaçu e região.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="container">
+      <div class="card" style="padding:18px">
+        <div class="section-title" style="margin:0">
+          <div>
+            <h2 style="margin:0 0 6px">Pronto para deixar tudo impecável?</h2>
+            <p style="margin:0;color:var(--muted)">Clique no WhatsApp e envie sua demanda. A mensagem vai pronta.</p>
+          </div>
+          <a class="btn btn-primary" id="ctaFinalWhats" href="#" rel="nofollow">💬 Solicitar orçamento no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <b>Clarear</b><br/>
+          <span>Pós-obra • Faxinas • Vidros/ACM • Água desmineralizada</span>
+          <div class="sep"></div>
+          <div class="small">
+            <b>Horário:</b> Seg–Sex 08:00–18:00<br/>
+            <b>WhatsApp:</b> <b>(48) 99999-9999</b><br/>
+            <b>Atendimento:</b> Florianópolis e região
+          </div>
+        </div>
+        <div>
+          <b>SEO local (para o Google)</b>
+          <div class="sep"></div>
+          <div class="small">
+            Conteúdo otimizado para buscas locais, ajudando empresas e condomínios a encontrar limpeza pós-obra, faxinas e limpeza de vidros/ACM com água desmineralizada.
+            <br/><br/>
+            <b>Palavras-chave incluídas:</b> limpeza pós-obra em Florianópolis, limpeza de vidros com água desmineralizada, limpeza de fachada ACM, faxina comercial, plano mensal de limpeza.
+          </div>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+      <div class="small">© <span id="year"></span> Clarear. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Whats -->
+  <div class="float" aria-label="Atalhos rápidos">
+    <a class="btn btn-primary" id="ctaFloatWhats" href="#" rel="nofollow">💬 WhatsApp</a>
+    <a class="btn btn-ghost" href="#contato">🧾 Orçamento</a>
+  </div>
+
+  <div class="toast" id="toast">Mensagem pronta! Abrindo WhatsApp…</div>
+
+  <script>
+    // ========= CONFIG =========
+    const WHATSAPP_NUMBER = "5548988395264"; // <-- troque aqui
+    const BUSINESS_NAME = "Clarear";
+    const CITY = "Florianópolis";
+    // ==========================
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const params = new URLSearchParams(window.location.search);
+    const utm = {
+      source: params.get("utm_source") || "",
+      medium: params.get("utm_medium") || "",
+      campaign: params.get("utm_campaign") || "",
+      term: params.get("utm_term") || "",
+      content: params.get("utm_content") || ""
+    };
+
+    function buildWhatsLink(message){
+      const text = encodeURIComponent(message);
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+    }
+    function showToast(){
+      const t = document.getElementById("toast");
+      t.style.display = "block";
+      setTimeout(()=> t.style.display = "none", 1800);
+    }
+    function defaultMessage(){
+      let msg = `Olá! Quero um orçamento com a ${BUSINESS_NAME}.\n`;
+      msg += `Cidade: ${CITY}\n`;
+      if (utm.source || utm.medium || utm.campaign){
+        msg += `\n(UTM) source=${utm.source} | medium=${utm.medium} | campaign=${utm.campaign}\n`;
+      }
+      msg += `\nMinha demanda: `;
+      return msg;
+    }
+
+    // Wire CTAs
+    const ctas = ["ctaHeroWhats","ctaServicesWhats","ctaReviewsWhats","ctaFinalWhats","ctaFloatWhats"];
+    ctas.forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.href = buildWhatsLink(defaultMessage());
+      el.addEventListener("click", ()=> showToast());
+    });
+
+    // Form submit -> Whats
+    const form = document.getElementById("leadForm");
+    form.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      const data = new FormData(form);
+
+      const nome = (data.get("nome")||"").toString().trim();
+      const tel = (data.get("telefone")||"").toString().trim();
+      const tipo = (data.get("tipo")||"").toString().trim();
+      const servico = (data.get("servico")||"").toString().trim();
+      const cidade = (data.get("cidade")||"").toString().trim();
+      const mensagem = (data.get("mensagem")||"").toString().trim();
+
+      let msg = `Olá! Quero um orçamento com a ${BUSINESS_NAME}.\n\n`;
+      msg += `Nome: ${nome}\n`;
+      msg += `WhatsApp: ${tel}\n`;
+      msg += `Tipo: ${tipo}\n`;
+      msg += `Serviço: ${servico}\n`;
+      msg += `Cidade: ${cidade || CITY}\n`;
+      if (mensagem) msg += `Detalhes: ${mensagem}\n`;
+
+      if (utm.source || utm.medium || utm.campaign || utm.term || utm.content){
+        msg += `\n(UTM) source=${utm.source} | medium=${utm.medium} | campaign=${utm.campaign} | term=${utm.term} | content=${utm.content}\n`;
+      }
+
+      showToast();
+      window.location.href = buildWhatsLink(msg);
+    });
+
+    // Reviews (troque pelos seus)
+    const instaReviews = [
+      {
+        name: "Cliente 1",
+        meta: "Empresa • Florianópolis",
+        stars: 5,
+        tag: "Pós-obra",
+        photo: "images/rev-1.jpg",
+        text: "Atendimento organizado e resultado impecável. Entregaram no prazo.",
+        sourceUrl: "#"
+      },
+      {
+        name: "Cliente 2",
+        meta: "Condomínio • São José",
+        stars: 5,
+        tag: "Plano mensal",
+        photo: "images/rev-2.jpg",
+        text: "Vidros ficaram sem manchas. Ótimo padrão de manutenção mensal.",
+        sourceUrl: "#"
+      },
+      {
+        name: "Cliente 3",
+        meta: "Comercial • Palhoça",
+        stars: 5,
+        tag: "Vidros/ACM",
+        photo: "images/rev-3.jpg",
+        text: "Capricho e acabamento. A água desmineralizada faz diferença.",
+        sourceUrl: "#"
+      }
+    ];
+
+    function starString(n){ return "★★★★★".slice(0, Math.max(0, Math.min(5, n || 5))); }
+    function renderReviews(){
+      const grid = document.getElementById("reviewsGrid");
+      if(!grid) return;
+
+      grid.innerHTML = instaReviews.map(r => `
+        <article class="review-card">
+          <div class="review-top">
+            <div class="avatar">
+              <img src="${r.photo}" alt="Foto de ${r.name}" loading="lazy" onerror="this.remove();" />
+            </div>
+            <div class="review-meta">
+              <b>${r.name}</b>
+              <span>${r.meta}</span>
+            </div>
+            <div class="stars" aria-label="${r.stars} estrelas">${starString(r.stars)}</div>
+          </div>
+
+          <div class="review-body">“${r.text}”</div>
+
+          <div class="review-footer">
+            <span>Origem: Clientes</span>
+            <span class="chip">${r.tag}</span>
+          </div>
+        </article>
+      `).join("");
+    }
+    renderReviews();
+  </script>
+</body>
+</html>
+
