@@ -1043,9 +1043,9 @@ function gtag_report_conversion(url) {
   <div class="whats" aria-label="WhatsApp">
     <div class="bubble">Quer orçamento rápido? Chama no WhatsApp 👇</div>
     <a class="fab" id="whatsFab"
-   href="https://wa.me/5548988395264"
+   href="https://wa.me/5548988395264?text=Olá!%20Vim%20pelo%20site%20da%20Clarear%20e%20gostaria%20de%20solicitar%20um%20orçamento."
    aria-label="Chamar no WhatsApp"
-   onclick="return gtag_report_conversion('https://wa.me/5548988395264');">💬</a>
+   onclick="return gtag_report_conversion(this.href);">💬</a>
   
   </div>
 
@@ -1139,7 +1139,7 @@ function gtag_report_conversion(url) {
         `Serviço: ${service}`,
         details ? `Detalhes: ${details}` : null
       ].filter(Boolean);
-
+      gtag_report_conversion(url);
       const link = waLink(lines.join("\n"));
       window.open(link, "_blank", "noopener");
     });
