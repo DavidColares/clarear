@@ -1,17 +1,14 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18135353188"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18135353188');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18135353188');
 </script>
-<!-- Event snippet for Contato conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
   var callback = function () {
@@ -19,14 +16,15 @@ function gtag_report_conversion(url) {
       window.location = url;
     }
   };
+
   gtag('event', 'conversion', {
-      'send_to': 'AW-18135353188/ETkPCPahv6YcEOSOzsdD',
-      'event_callback': callback
+    'send_to': 'AW-18135353188/ETkPCPahv6YcEOSOzsdD',
+    'event_callback': callback
   });
+
   return false;
 }
 </script>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Clarear • Limpeza Pós-Obra em Florianópolis e Região</title>
@@ -991,7 +989,7 @@ function gtag_report_conversion(url) {
             </div>
 
             <div class="actions">
-              <button class="btn btn-primary" type="submit">Enviar no WhatsApp</button>
+              <button class="btn btn-primary" type="submit" onclick="gtag_report_conversion();">Enviar no WhatsApp</button>
             </div>
           </form>
         </div>
@@ -1008,7 +1006,7 @@ function gtag_report_conversion(url) {
           </div>
 
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn btn-primary" id="whatsCta" href="#">Chamar no WhatsApp</a>
+            <a class="btn btn-primary" id="whatscta" href="#" onclick="return gtag_report_conversion(this.href);">Chamar no WhatsApp</a>
             <a class="btn btn-ghost" href="#trabalhos">Ver portfólio</a>
           </div>
         </aside>
@@ -1044,7 +1042,7 @@ function gtag_report_conversion(url) {
   <!-- Floating WhatsApp -->
   <div class="whats" aria-label="WhatsApp">
     <div class="bubble">Quer orçamento rápido? Chama no WhatsApp 👇</div>
-    <a class="fab" id="whatsFab" href="#" aria-label="Chamar no WhatsApp">💬</a>
+    <a class="fab" id="whatsFab" href="#" aria-label="Chamar no WhatsApp"onclick="return gtag_report_conversion(this.href);">💬</a>
   </div>
 
   <script>
