@@ -1,1127 +1,1158 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18135353188"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-18135353188');
-</script>
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+  <!-- Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18135353188"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18135353188');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18135353188/ETkPCPahv6YcEOSOzsdD',
+        'event_callback': callback
+      });
+
+      return false;
     }
-  };
+  </script>
 
-  gtag('event', 'conversion', {
-    'send_to': 'AW-18135353188/ETkPCPahv6YcEOSOzsdD',
-    'event_callback': callback
-  });
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y508X0PVP"></script>
+  <script>
+    gtag('config', 'G-7Y508X0PVP');
+  </script>
 
-  return false;
-}
-</script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clarear • Limpeza Pós-Obra em Florianópolis e Região</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Clarear | Limpeza Pós-Obra, Vidros e Planos Comerciais em Florianópolis</title>
+
+  <meta name="description" content="A Clarear realiza limpeza pós-obra, limpeza de vidros comerciais e planos mensais de limpeza em Florianópolis, São José, Palhoça e região. Atendimento ágil, equipe profissional e acabamento de alto padrão.">
+  <meta name="keywords" content="limpeza pós obra Florianópolis, limpeza pós construção, limpeza de vidros Florianópolis, limpeza comercial Florianópolis, limpeza para empresas, limpeza pós obra São José, limpeza pós obra Palhoça">
+
   <link rel="shortcut icon" href="imagens/logo-clarear (1).ico" type="image/x-icon">
-  <meta name="description" content="Empresa especializada em limpeza pós-obra em Florianópolis, São José, Palhoça, Balneário Camboriú e região. Atendimento para construtoras, reformas, empresas e residências." />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y508X0PVP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7Y508X0PVP');
-</script>
 
   <style>
     :root{
-      --blue:#0B57D0;           /* principal */
-      --black:#0B0F1A;          /* base escura */
-      --white:#FFFFFF;         /* base clara */
-      --soft:#F3F6FB;           /* extra (cinza claro) */
-      --line:rgba(11, 15, 26, 0.362);
-      --shadow: 0 10px 25px rgba(11, 15, 26, 0.411);
-      --radius: 18px;
-      --max: 1160px;
+  --azul:#2F8FCD;
+  --azul-escuro:#1F6FA8;
+  --azul-claro:#EAF6FD;
+  --branco:#FFFFFF;
+  --off:#F7FAFF;
+  --texto:#1F2937;
+  --muted:#667085;
+  --linha:#E5EAF1;
+  --preto:#0B0F1A;
+  --sombra:0 18px 45px rgba(15,23,42,.12);
+  --radius:24px;
+  --max:1160px;
+}
+
+    * {
+      box-sizing:border-box;
     }
 
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color: var(--black);
-      background: var(--white);
-      line-height: 1.45;
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--texto);
+      background:var(--branco);
+      line-height:1.5;
       overflow-x:hidden;
     }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
 
-    /* ====== Layout helpers ====== */
-    .container{width: min(var(--max), calc(100% - 40px)); margin: 0 auto;}
-    .grid{display:grid; gap: 18px;}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding: 12px 16px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-weight: 700;
+    a {
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img {
+      max-width:100%;
+      display:block;
+    }
+
+    .container {
+      width:min(var(--max), calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:14px 20px;
+      border-radius:999px;
+      font-weight:800;
+      border:1px solid transparent;
       cursor:pointer;
-      transition: .2s ease;
-      user-select:none;
+      transition:.2s ease;
+      font-size:15px;
       white-space:nowrap;
     }
-    .btn-primary{background:var(--blue); color:var(--white); box-shadow: 0 12px 30px rgba(11,87,208,.28);}
-    .btn-primary:hover{transform: translateY(-1px); filter: brightness(1.03);}
-    .btn-ghost{background: transparent; border-color: rgba(255,255,255,.25); color: var(--white);}
-    .btn-ghost:hover{background: rgba(255,255,255,.08);}
 
-    .pill{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.18);
-      color: var(--white);
-      font-weight: 650;
-      font-size: 13px;
+    .btn-primary {
+      background:var(--azul);
+      color:var(--branco);
+      box-shadow:0 14px 30px rgba(11,87,208,.24);
     }
 
-    .section{padding: 70px 0;}
-    .section-title{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap: 18px;
-      margin-bottom: 18px;
+    .btn-primary:hover {
+      transform:translateY(-1px);
+      filter:brightness(1.04);
     }
-    .section-title h2{
+
+    .btn-light {
+      background:var(--branco);
+      color:var(--azul);
+      border-color:rgba(11,87,208,.18);
+    }
+
+    .btn-outline {
+      background:transparent;
+      color:var(--azul);
+      border-color:rgba(11,87,208,.25);
+    }
+
+    .section {
+      padding:80px 0;
+    }
+
+    .section-head {
+      max-width:760px;
+      margin-bottom:34px;
+    }
+
+    .eyebrow {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(11,87,208,.08);
+      color:var(--azul);
+      font-weight:800;
+      font-size:13px;
+      margin-bottom:14px;
+    }
+
+    h1, h2, h3 {
       margin:0;
-      font-size: clamp(22px, 3vw, 34px);
-      letter-spacing: -.02em;
+      line-height:1.08;
+      letter-spacing:-.03em;
+      color:var(--preto);
     }
-    .section-title p{margin:0; color: rgba(11,15,26,.72); max-width: 560px;}
 
-    /* ====== Header ====== */
-    .header{
-      position: sticky; top:0; z-index: 50;
-      background: #0e459e;
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255,255,255,.12);
+    h1 {
+      font-size:clamp(34px,5vw,62px);
     }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding: 14px 0;
-      gap: 14px;
+
+    h2 {
+      font-size:clamp(28px,3.4vw,42px);
     }
-    .brand{
-      display:flex; align-items:center; gap: 12px; color: var(--white);
+
+    h3 {
+      font-size:22px;
     }
-    .logo{
-      width: 100px; height: 70px;
-      border-radius: 15px;
-      background: radial-gradient(120% 120% at 20% 20%, white 0%, white 35%, white 100%);
-      box-shadow: 0 14px 28px rgba(0,0,0,.25);
+
+    p {
+      margin:0;
+      color:var(--muted);
+    }
+
+    /* HEADER */
+.header{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(229,234,241,.85);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img{
+  width:160px;
+  height:auto;
+  object-fit:contain;
+}
+
+.brand-text{
+  display:none;
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.menu a{
+  padding:10px 14px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:750;
+  color:#344054;
+  transition:.2s ease;
+}
+
+.menu a:hover,
+.menu a.active{
+  color:#fff;
+  background:var(--azul);
+}
+
+.hamburger{
+  display:none;
+  width:48px;
+  height:48px;
+  border-radius:16px;
+  border:1px solid var(--linha);
+  background:#fff;
+  font-size:24px;
+  cursor:pointer;
+  color:var(--azul);
+}
+
+    /* HERO */
+    .hero {
       position:relative;
-      overflow:hidden;
-    }
-    .logo:after{
-      content:"";
-      position:absolute; inset:-40%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
-      transform: rotate(25deg);
-      animation: shine 5.5s ease-in-out infinite;
-    }
-    @keyframes shine{
-      0%,45%{transform: translateX(-30%) rotate(25deg)}
-      65%{transform: translateX(30%) rotate(25deg)}
-      100%{transform: translateX(-30%) rotate(25deg)}
-    }
-    .brand strong{font-size: 16px; letter-spacing:.02em;}
-    .brand span{display:block; font-size: 12px; color: rgba(255,255,255,.75); margin-top: 2px;}
-
-    .menu{display:flex; align-items:center; gap: 16px;}
-    .menu a{
-      color: rgba(255,255,255,.86);
-      font-weight: 650;
-      font-size: 14px;
-      padding: 10px 10px;
-      border-radius: 10px;
-      transition:.2s;
-    }
-    .menu a:hover{background: rgba(255,255,255,.08); color: var(--white);}
-
-    .nav-actions{display:flex; align-items:center; gap: 10px;}
-    .hamburger{
-      display:none;
-      width: 44px; height: 44px; border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.06);
-      color: var(--white);
-      cursor:pointer;
-    }
-
-    /* ====== Hero ====== */
-    .hero{
-      background: radial-gradient(1100px 520px at 20% 10%, rgba(11,87,208,.55) 0%, rgba(11,87,208,.08) 45%, transparent 70%),
-                  radial-gradient(900px 520px at 80% 0%, rgba(255,255,255,.12) 0%, transparent 60%),
-                  linear-gradient(180deg, var(--black) 0%, #0b0f1a 45%, #0b0f1a 100%);
-      color: var(--white);
-      position:relative;
-      overflow:hidden;
-    }
-    .hero:before{
-      content:"";
-      position:absolute; inset:0;
-      background-image: radial-gradient(rgba(255,255,255,.08) 1px, transparent 1px);
-      background-size: 18px 18px;
-      opacity:.18;
-      pointer-events:none;
-    }
-
-    .hero-wrap{
-      display:grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap: 26px;
-      padding: 48px 0 34px;
-      position:relative;
-      z-index:1;
-      align-items:stretch;
-    }
-    .hero h1{
-      margin: 12px 0 12px;
-      font-size: clamp(30px, 4.1vw, 54px);
-      letter-spacing: -.03em;
-      line-height: 1.05;
-    }
-    .hero p{
-      margin: 0 0 18px;
-      color: rgba(255,255,255,.84);
-      font-size: 16px;
-      max-width: 58ch;
-    }
-
-    .hero-cta{display:flex; gap:12px; flex-wrap:wrap; margin-top: 10px;}
-    .mini-stats{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 12px;
-      margin-top: 18px;
-      max-width: 560px;
-    }
-    .stat{
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      border-radius: 16px;
-      padding: 12px;
-    }
-    .stat b{display:block; font-size: 16px;}
-    .stat small{color: rgba(255,255,255,.76);}
-
-    .hero-card{
-      border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      box-shadow: 0 26px 80px rgba(0,0,0,.25);
-      overflow:hidden;
-      display:flex;
-      flex-direction:column;
-    }
-    .hero-card .top{
-      padding: 16px 16px 10px;
-      display:flex; align-items:center; justify-content:space-between;
-      border-bottom: 1px solid rgba(255,255,255,.12);
-    }
-    .hero-card .top .badge{
-      font-weight:800; font-size: 12px; letter-spacing:.06em;
-      padding: 8px 10px; border-radius: 999px;
-      background: rgba(11,87,208,.20);
-      border: 1px solid rgba(11,87,208,.45);
-    }
-    .hero-card .top .dot{
-      width:10px;height:10px;border-radius:99px;background:#2cff85;
-      box-shadow: 0 0 0 4px rgba(44,255,133,.15);
-    }
-    .hero-card .content{
-      padding: 14px 16px 16px;
-      display:grid; gap: 12px;
-    }
-    .hero-card .item{
-      display:flex; gap: 12px; align-items:flex-start;
-      padding: 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.10);
-    }
-    .ico{
-      width: 38px; height: 38px; border-radius: 14px;
-      background: rgba(11,87,208,.22);
-      border: 1px solid rgba(11,87,208,.45);
-      display:grid; place-items:center;
-      flex:0 0 auto;
-    }
-    .item b{display:block; font-size: 14px;}
-    .item span{display:block; color: rgba(255,255,255,.78); font-size: 13px; margin-top: 2px;}
-
-    /* ====== Feature strip ====== */
-    .strip{
-      margin-top: 22px;
-      border-top: 1px solid rgba(255,255,255,.12);
-      padding: 18px 0 0;
-      display:flex; gap: 14px; flex-wrap:wrap;
-      color: rgba(255,255,255,.82);
-      font-weight: 650;
-    }
-    .strip .tag{
-      display:inline-flex; gap:10px; align-items:center;
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.12);
-    }
-
-    /* ====== Cards ====== */
-    .card{
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: 0 10px 30px rgba(11,15,26,.06);
-      overflow:hidden;
-    }
-    .card.pad{padding: 18px;}
-
-    /* ====== Services ====== */
-    .services{
-      background: linear-gradient(180deg, var(--white), var(--soft));
-    }
-    .services-grid{
-      grid-template-columns: repeat(12, 1fr);
-      gap: 14px;
-    }
-    .service{
-      grid-column: span 6;
-      padding: 18px;
-      border-radius: var(--radius);
-      background: var(--white);
-      border: 1px solid var(--line);
-      box-shadow: 0 14px 32px rgba(11,15,26,.06);
-      display:flex; gap: 14px;
-      min-height: 132px;
-    }
-    .service .icon2{
-      width: 46px; height: 46px; border-radius: 16px;
-      background: rgba(11,87,208,.10);
-      border: 1px solid rgba(11,87,208,.22);
-      display:grid; place-items:center;
-      flex:0 0 auto;
-    }
-    .service h3{margin: 0 0 6px; font-size: 16px;}
-    .service p{margin:0; color: rgba(11,15,26,.70); font-size: 14px;}
-
-    /* ====== Portfolio ====== */
-    .portfolio-grid{
-      grid-template-columns: repeat(12,1fr);
-      gap: 14px;
-    }
-    .work{
-      grid-column: span 4;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      overflow:hidden;
-      background: var(--white);
-      box-shadow: 0 16px 38px rgba(11,15,26,.06);
-    }
-    .work .ph{
-      aspect-ratio: 4/3;
+      padding:78px 0 56px;
       background:
-        radial-gradient(120% 120% at 20% 20%, rgba(11,87,208,.22) 0%, rgba(11,87,208,.05) 40%, transparent 70%),
-        linear-gradient(135deg, #111827 0%, #0b0f1a 60%);
-      position:relative;
-    }
-    .work .ph:after{
-      content:"FOTO";
-      position:absolute; inset:auto 14px 14px auto;
-      font-weight: 900; letter-spacing:.12em; font-size: 12px;
-      color: rgba(255,255,255,.74);
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.06);
-    }
-    .work .info{padding: 14px 14px 16px;}
-    .work b{display:block}
-    .work small{display:block; color: rgba(11,15,26,.70); margin-top: 4px;}
-
-    /* ====== Testimonials ====== */
-    .testimonials{
-      background: linear-gradient(180deg, var(--soft), var(--white));
-    }
-    .t-grid{
-      grid-template-columns: repeat(12, 1fr);
-      gap: 14px;
-    }
-    .quote{
-      grid-column: span 4;
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: var(--white);
-      box-shadow: 0 14px 32px rgba(11,15,26,.06);
-    }
-    .stars{letter-spacing: 1px; color: var(--blue); font-weight: 900;}
-    .quote p{margin: 10px 0 12px; color: rgba(11,15,26,.78)}
-    .who{display:flex; align-items:center; gap: 10px;}
-    .avatar{
-      width: 38px; height: 38px; border-radius: 50%;
-      background: radial-gradient(120% 120% at 20% 20%, rgba(11,87,208,.50), rgba(11,87,208,.12));
-      border: 1px solid rgba(11,87,208,.22);
-    }
-    .who b{font-size: 14px;}
-    .who small{display:block; color: rgba(11,15,26,.60)}
-
-    /* ====== FAQ ====== */
-    .faq-wrap{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      align-items:start;
-    }
-    .faq-card{padding: 6px;}
-    .qa{
-      border-radius: 16px;
-      border: 1px solid var(--line);
+        radial-gradient(900px 420px at 15% 5%, rgba(11,87,208,.12), transparent 60%),
+        linear-gradient(180deg, #FFFFFF 0%, #F7FAFF 100%);
       overflow:hidden;
-      background: var(--white);
     }
-    .q{
-      width:100%;
-      border:0;
-      text-align:left;
-      background: transparent;
-      padding: 14px 14px;
-      display:flex; align-items:center; justify-content:space-between;
-      gap: 12px;
-      cursor:pointer;
-      font-weight: 800;
-    }
-    .q span{font-size: 14px;}
-    .chev{
-      width: 34px; height: 34px; border-radius: 12px;
-      border: 1px solid var(--line);
-      display:grid; place-items:center;
-      transition: .18s ease;
-      color: rgba(11,15,26,.70);
-      flex:0 0 auto;
-    }
-    .a{
-      max-height:0;
-      overflow:hidden;
-      transition: max-height .22s ease;
-      border-top: 1px solid var(--line);
-      background: rgba(11,87,208,.03);
-    }
-    .a p{margin:0; padding: 12px 14px; color: rgba(11,15,26,.72); font-size: 14px;}
-    .qa.open .chev{transform: rotate(180deg); background: rgba(11,87,208,.08); border-color: rgba(11,87,208,.18); color: var(--blue);}
-    .qa.open .a{max-height: 220px;}
 
-    /* ====== Quote / Budget ====== */
-    .budget{
-      background: linear-gradient(180deg, var(--white), var(--soft));
-    }
-    .budget-grid{
-      grid-template-columns: 1.1fr .9fr;
-      gap: 16px;
-      align-items:stretch;
-    }
-    .form{
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: var(--white);
-      box-shadow: var(--shadow);
-    }
-    .form h3{margin: 0 0 6px; font-size: 18px;}
-    .form p{margin:0 0 14px; color: rgba(11,15,26,.70);}
-    .fields{
+    .hero-grid {
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 10px;
-    }
-    .field{display:grid; gap:6px;}
-    .field label{font-size: 12px; font-weight: 800; color: rgba(11,15,26,.75);}
-    .field input, .field select, .field textarea{
-      width: 100%;
-      padding: 12px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(11,15,26,.14);
-      outline: none;
-      font: inherit;
-      background: var(--white);
-      transition:.15s ease;
-    }
-    .field input:focus, .field select:focus, .field textarea:focus{
-      border-color: rgba(11,87,208,.55);
-      box-shadow: 0 0 0 4px rgba(11,87,208,.12);
-    }
-    .field.full{grid-column: 1 / -1;}
-    textarea{min-height: 110px; resize: vertical;}
-    .form .actions{
-      margin-top: 12px;
-      display:flex; gap: 10px; flex-wrap:wrap;
+      grid-template-columns:1.1fr .9fr;
+      gap:44px;
       align-items:center;
     }
-    .hint{font-size: 12px; color: rgba(11,15,26,.65);}
 
-    .offer{
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(11,87,208,.22);
-      background: radial-gradient(120% 120% at 15% 0%, rgba(11,87,208,.18) 0%, rgba(11,87,208,.05) 45%, transparent 70%),
-                  linear-gradient(180deg, #0b0f1a 0%, #0b0f1a 100%);
-      color: var(--white);
-      box-shadow: 0 28px 90px rgba(0,0,0,.20);
+    .hero-text p {
+      margin-top:18px;
+      font-size:18px;
+      max-width:650px;
+    }
+
+    .hero-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:28px;
+    }
+
+    .trust-row {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin-top:30px;
+      max-width:650px;
+    }
+
+    .trust {
+      background:var(--branco);
+      border:1px solid var(--linha);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 10px 26px rgba(11,15,26,.04);
+    }
+
+    .trust strong {
+      display:block;
+      color:var(--preto);
+      font-size:15px;
+      margin-bottom:3px;
+    }
+
+    .trust span {
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .hero-image {
+      width:100%;
+      height:80%;
+    }
+
+    .hero-image img {
+      width:100%;
+      height:580px;
+      border-radius:24px;
+      object-fit:cover;
+    }
+
+    .hero-card-content {
+      padding:20px 4px 4px;
+    }
+
+    .hero-card-content h3 {
+      font-size:22px;
+      margin-bottom:10px;
+    }
+
+    .hero-list {
+      list-style:none;
+      padding:0;
+      margin:16px 0 0;
+      display:grid;
+      gap:10px;
+    }
+
+    .hero-list li {
+      display:flex;
+      gap:10px;
+      color:#344054;
+      font-weight:650;
+    }
+
+    .check {
+      width:24px;
+      height:24px;
+      border-radius:50%;
+      background:rgba(11,87,208,.10);
+      color:var(--azul);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      flex:0 0 auto;
+      font-weight:900;
+    }
+
+    /* SERVICES */
+    .services {
+      background:var(--branco);
+    }
+
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .service-card {
+      background:var(--branco);
+      border:1px solid var(--linha);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:0 12px 30px rgba(11,15,26,.05);
       display:flex;
       flex-direction:column;
       justify-content:space-between;
-      gap: 14px;
-    }
-    .offer h3{margin:0; font-size: 18px;}
-    .offer ul{margin: 10px 0 0; padding: 0; list-style:none; display:grid; gap: 10px;}
-    .offer li{display:flex; gap: 10px; align-items:flex-start; color: rgba(255,255,255,.86);}
-    .check{
-      width: 22px; height: 22px; border-radius: 8px;
-      background: rgba(44,255,133,.16);
-      border: 1px solid rgba(44,255,133,.35);
-      display:grid; place-items:center;
-      flex:0 0 auto;
-      margin-top: 1px;
+      gap:22px;
+      min-height:340px;
+      transition:.2s ease;
     }
 
-    /* ====== Footer ====== */
-    .footer{
-      background: var(--black);
-      color: rgba(255,255,255,.86);
-      padding: 38px 0;
+    .service-card:hover {
+      transform:translateY(-3px);
+      box-shadow:var(--sombra);
     }
-    .footer-grid{
+
+    .service-icon {
+      width:52px;
+      height:52px;
+      border-radius:18px;
+      background:rgba(11,87,208,.08);
+      color:var(--azul);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:24px;
+      margin-bottom:18px;
+    }
+
+    .service-card h3 {
+      margin-bottom:12px;
+    }
+
+    .service-card p {
+      margin-bottom:18px;
+    }
+
+    .mini-list {
+      list-style:none;
+      padding:0;
+      margin:0;
       display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 16px;
+      gap:8px;
+      color:#475467;
+      font-size:14px;
+    }
+
+    .mini-list li::before {
+      content:"✓";
+      color:var(--azul);
+      font-weight:900;
+      margin-right:8px;
+    }
+
+    .featured {
+      border:2px solid rgba(11,87,208,.35);
+      background:linear-gradient(180deg,#FFFFFF 0%,#F5F9FF 100%);
+    }
+
+    /* WHY */
+    .why {
+      background:var(--cinza);
+    }
+
+    .why-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+
+    .why-card {
+      background:var(--branco);
+      border:1px solid var(--linha);
+      border-radius:20px;
+      padding:22px;
+    }
+
+    .why-card span {
+      font-size:28px;
+      display:block;
+      margin-bottom:12px;
+    }
+
+    .why-card strong {
+      display:block;
+      color:var(--preto);
+      font-size:17px;
+      margin-bottom:8px;
+    }
+
+    .why-card p {
+      font-size:14px;
+    }
+
+    /* PORTFOLIO */
+    .portfolio-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .work {
+      background:var(--branco);
+      border:1px solid var(--linha);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:0 12px 30px rgba(11,15,26,.05);
+    }
+
+    .work-photo {
+      aspect-ratio:4/3;
+      background:var(--cinza);
+      overflow:hidden;
+    }
+
+    .work-photo img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:.3s ease;
+    }
+
+    .work:hover img {
+      transform:scale(1.04);
+    }
+
+    .work-info {
+      padding:18px;
+    }
+
+    .work-info strong {
+      display:block;
+      color:var(--preto);
+      margin-bottom:6px;
+    }
+
+    /* CTA */
+    .cta {
+      background:linear-gradient(135deg,var(--azul) 0%,var(--azul-escuro) 100%);
+      color:var(--branco);
+      padding:70px 0;
+    }
+
+    .cta-box {
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:30px;
+      align-items:center;
+    }
+
+    .cta h2 {
+      color:var(--branco);
+    }
+
+    .cta p {
+      color:rgba(255,255,255,.82);
+      margin-top:14px;
+      font-size:17px;
+    }
+
+    .cta-actions {
+      display:flex;
+      justify-content:flex-end;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    /* FORM */
+    .form-section {
+      background:var(--branco);
+    }
+
+    .form-grid {
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:30px;
       align-items:start;
     }
-    .footer a{color: rgba(255,255,255,.86); text-decoration:underline; text-underline-offset: 4px;}
-    .foot-card{
-      border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      padding: 16px;
-    }
-    .foot-card b{display:block; margin-bottom: 6px;}
-    .fine{margin-top: 18px; font-size: 12px; color: rgba(255,255,255,.64);}
 
-    /* ====== Floating WhatsApp ====== */
-    .whats{
-      position:fixed; right: 16px; bottom: 16px; z-index: 60;
-      display:flex; gap: 10px; align-items:center;
-    }
-    .whats .bubble{
-      display:none;
-      background: var(--black);
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 14px;
-      padding: 10px 12px;
-      box-shadow: var(--shadow);
-      max-width: 240px;
-      font-weight: 650;
-      font-size: 13px;
-    }
-    .whats .fab{
-      width: 54px; height: 54px; border-radius: 18px;
-      background: var(--blue);
-      color: var(--white);
-      display:grid; place-items:center;
-      box-shadow: 0 16px 40px rgba(11,87,208,.28);
-      border: 1px solid rgba(255,255,255,.18);
+    .contact-card {
+      background:var(--cinza);
+      border:1px solid var(--linha);
+      border-radius:var(--radius);
+      padding:28px;
     }
 
-    /* ====== Mobile ====== */
-    @media (max-width: 980px){
-      .hero-wrap{grid-template-columns: 1fr; padding: 34px 0 24px;}
-      .menu{display:none}
-      .hamburger{display:inline-grid; place-items:center}
-      .services-grid .service{grid-column: span 12}
-      .portfolio-grid .work{grid-column: span 6}
-      .t-grid .quote{grid-column: span 6}
-      .faq-wrap{grid-template-columns: 1fr}
-      .budget-grid{grid-template-columns: 1fr}
-      .fields{grid-template-columns: 1fr}
-      .footer-grid{grid-template-columns: 1fr}
-      .whats .bubble{display:block}
+    .contact-card h3 {
+      margin-bottom:14px;
     }
 
-    @media (max-width: 560px){
-      .portfolio-grid .work{grid-column: span 12}
-      .t-grid .quote{grid-column: span 12}
-      .mini-stats{grid-template-columns: 1fr}
-    }
-
-    /* ====== Mobile menu overlay ====== */
-    .drawer{
-      position:fixed; inset: 0;
-      background: rgba(0,0,0,.48);
-      display:none;
-      z-index: 80;
-    }
-    .drawer.open{display:block}
-    .drawer-panel{
-      position:absolute; right: 0; top:0; height: 100%;
-      width: min(380px, 92vw);
-      background: var(--black);
-      border-left: 1px solid rgba(255,255,255,.12);
-      padding: 18px;
+    .contact-list {
+      list-style:none;
+      padding:0;
+      margin:22px 0 0;
       display:grid;
-      gap: 10px;
-      color: var(--white);
+      gap:14px;
     }
-    .drawer-panel a{
-      padding: 12px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      font-weight: 750;
+
+    .contact-list li {
+      display:flex;
+      gap:10px;
+      color:#344054;
+      font-weight:650;
     }
-    .drawer-panel a:hover{
-      background: rgba(255,255,255,.10);
+
+    form {
+      background:var(--branco);
+      border:1px solid var(--linha);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:var(--sombra);
     }
-    .drawer-panel .toprow{
-      display:flex; align-items:center; justify-content:space-between;
-      margin-bottom: 8px;
+
+    .fields {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
     }
-    .xbtn{
-      width: 42px; height: 42px; border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.12);
-      color: var(--white);
+
+    .field {
+      display:grid;
+      gap:7px;
+    }
+
+    .field.full {
+      grid-column:1/-1;
+    }
+
+    label {
+      font-size:13px;
+      font-weight:800;
+      color:#344054;
+    }
+
+    input, select, textarea {
+      width:100%;
+      border:1px solid #D0D5DD;
+      border-radius:14px;
+      padding:13px 14px;
+      font:inherit;
+      outline:none;
+      background:var(--branco);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color:var(--azul);
+      box-shadow:0 0 0 4px rgba(11,87,208,.12);
+    }
+
+    textarea {
+      min-height:110px;
+      resize:vertical;
+    }
+
+    .form-actions {
+      margin-top:18px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .small {
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* FOOTER */
+    footer {
+      background:var(--preto);
+      color:rgba(255,255,255,.78);
+      padding:42px 0;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    footer strong {
+      color:var(--branco);
+      display:block;
+      margin-bottom:8px;
+    }
+
+    footer a {
+      color:var(--branco);
+      text-decoration:underline;
+      text-underline-offset:4px;
+    }
+
+    .copy {
+      margin-top:24px;
+      font-size:12px;
+      color:rgba(255,255,255,.55);
+    }
+
+    /* WHATSAPP */
+    .whats {
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:80;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .whats-bubble {
+      background:var(--preto);
+      color:var(--branco);
+      padding:10px 13px;
+      border-radius:16px;
+      box-shadow:var(--sombra);
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .whats-btn {
+      width:58px;
+      height:58px;
+      border-radius:20px;
+      background:#25D366;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:26px;
+      box-shadow:0 16px 36px rgba(37,211,102,.35);
+    }
+
+    /* DRAWER */
+    .drawer {
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.45);
+      z-index:90;
+      display:none;
+    }
+
+    .drawer.open {
+      display:block;
+    }
+
+    .drawer-panel {
+      width:min(360px,90vw);
+      height:100%;
+      background:var(--branco);
+      margin-left:auto;
+      padding:22px;
+      display:grid;
+      gap:12px;
+      align-content:start;
+    }
+
+    .drawer-top {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:12px;
+    }
+
+    .drawer a {
+      padding:14px;
+      border:1px solid var(--linha);
+      border-radius:14px;
+      font-weight:800;
+      color:var(--preto);
+    }
+
+    .close {
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      border:1px solid var(--linha);
+      background:var(--branco);
       cursor:pointer;
+      font-size:20px;
+    }
+
+    @media (max-width:980px) {
+      .menu,
+      .nav .btn-primary {
+        display:none;
+      }
+
+      .hamburger {
+        display:block;
+      }
+
+      .hero-grid,
+      .cta-box,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns:1fr;
+      }
+
+      .cta-actions {
+        justify-content:flex-start;
+      }
+
+      .cards,
+      .why-grid,
+      .portfolio-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media (max-width:640px) {
+      .container {
+        width:min(100% - 28px, var(--max));
+      }
+
+      .hero {
+        padding:50px 0 38px;
+      }
+
+      .section {
+        padding:58px 0;
+      }
+
+      .cards,
+      .why-grid,
+      .portfolio-grid,
+      .trust-row,
+      .fields {
+        grid-template-columns:1fr;
+      }
+
+      .brand-text {
+        display:none;
+      }
+
+      .whats-bubble {
+        display:none;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Header -->
+
   <header class="header">
-    <div class="container">
-      <div class="nav">
-        <a href="#inicio"><img src="imagens/clareartransparente.png" alt="Clarear limpezas" class="logo"></a>
-          <div style="color: white;">
-            <strong>Clarear</strong>
-            <span>Especialistas em Limpeza Pós-Obra</span>
-          </div>
-        </a>
+  <div class="container">
+    <div class="nav">
 
-        <nav class="menu" aria-label="Navegação principal">
-          <a href="#servicos">Serviços</a>
-          <a href="#trabalhos">Trabalhos</a>
-          <a href="#depoimentos">Depoimentos</a>
-          <a href="#faq">FAQ</a>
-          <a href="#orcamento">Orçamento</a>
-        </nav>
+      <a href="index.html" class="brand">
+        <img src="imagens/clarear.png" alt="Clarear Limpezas">
+      </a>
 
-        <div class="nav-actions">
-          <a class="btn btn-ghost" href="#orcamento">Pedir orçamento</a>
-          <button class="hamburger" id="openDrawer" aria-label="Abrir menu">☰</button>
-        </div>
-      </div>
+      <nav class="menu">
+        <a href="index.html"class="active">Home</a>
+        <a href="pos_obra.html" >Pós-Obra</a>
+        <a href="limpeza-de-vidros.html">Limpeza de Vidros</a>
+        <a href="limpeza-periodica.html">Planos Mensais</a>
+      </nav>
+
+      <a href="#orcamento" class="btn btn-primary">Solicitar orçamento</a>
+
+      <button class="hamburger" id="openMenu" aria-label="Abrir menu">☰</button>
+
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Mobile drawer -->
-  <div class="drawer" id="drawer" aria-hidden="true">
-    <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
-      <div class="toprow">
-        <div style="display:flex; gap:10px; align-items:center;">
-          <div class="logo" style="width:38px;height:38px;border-radius:12px;"><img src="imagens/clarear-logo-transparente.png" alt="clarear limpezas"></div>
-          <strong>Clarear</strong>
-        </div>
-        <button class="xbtn" id="closeDrawer" aria-label="Fechar menu">✕</button>
+  <div class="drawer" id="drawer">
+    <div class="drawer-panel">
+      <div class="drawer-top">
+        <strong>Menu</strong>
+        <button class="close" id="closeDrawer">×</button>
       </div>
-      <a href="#servicos" class="drawerLink">Serviços</a>
-      <a href="#trabalhos" class="drawerLink">Trabalhos realizados</a>
-      <a href="#depoimentos" class="drawerLink">Depoimentos</a>
-      <a href="#faq" class="drawerLink">Perguntas frequentes</a>
-      <a href="#orcamento" class="drawerLink">Solicitar orçamento</a>
+        <a href="#inicio" class="drawerLink">Home</a>
+        <a href="pos_obra.html" >Pós-Obra</a>
+        <a href="limpeza-de-vidros.html">Limpeza de Vidros</a>
+        <a href="limpeza-periodica.html">Planos Mensais</a>
     </div>
   </div>
 
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <div class="container">
-      <div class="hero-wrap">
-        <div>
-          <div class="pill">🏗️ Limpeza Pós-Obra Profissional • Florianópolis e Região</div>
-          <h1>Limpeza Pós-Obra profissional para construtoras, reformas e imóveis de alto padrão.</h1>
-          <p>A <b>Clarear</b> é especializada em <b>limpeza pós-obra</b> e limpeza final de entrega para construtoras, empresas de reformas, arquitetos e residências de alto padrão.
-            Atendemos <b>Florianópolis</b>, <b>São José</b>, <b>Palhoça</b>, <b>Biguaçu</b>, <b>Balneário Camboriú</b> e toda Santa Catarina.
-          </p>
+  <main>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#orcamento">Quero um orçamento</a>
-            <a class="btn btn-ghost" href="#trabalhos">Ver trabalhos</a>
-          </div>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="eyebrow">🏗️ Clarear Limpezas • Florianópolis e Região</div>
 
-          <div class="mini-stats" aria-label="Destaques">
-            <div class="stat">
-              <b>Acabamento premium</b>
-              <small>entrega impecável</small>
-            </div>
-            <div class="stat">
-              <b>Atendimento rápido</b>
-              <small>orçamentos ágeis</small>
-            </div>
-            <div class="stat">
-              <b>Pós-obra</b>
-              <small>entrega impecável</small>
+            <h1>Limpeza Pós-Obra, Vidros e Planos Comerciais com agilidade e alto padrão.</h1>
+
+            <p>
+              A Clarear atende construtoras, condomínios, empresas e imóveis de alto padrão com equipes dimensionadas para entregar ambientes limpos, organizados e prontos para uso.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#orcamento">Solicitar orçamento</a>
+              <a class="btn btn-outline" id="heroWhats" href="#">Falar no WhatsApp</a>
             </div>
           </div>
 
-          <div class="strip" aria-label="Benefícios rápidos">
-            <div class="tag">✅ Equipe treinada</div>
-            <div class="tag">✅ Materiais profissionais</div>
-            <div class="tag">✅ Atendimento rápido</div>
-            <div class="tag">✅ Padrão premium</div>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Diferenciais Clarear">
-          <div class="top">
-            <div class="badge">DIFERENCIAIS</div>
-            <div class="dot" title="Disponível"></div>
-          </div>
-          <div class="content">
-            <div class="item">
-              <div class="ico" aria-hidden="true">🧪</div>
-              <div>
-                <b>Equipe especializada</b>
-                <span>Profissionais preparados para limpeza pós-obra e acabamento final.</span>
-              </div>
+          <div class="hero-card">
+            <div class="hero-image">
+              <img src="imagens/posobra02.jpeg" alt="Limpeza pós-obra realizada pela Clarear">
             </div>
-            <div class="item">
-              <div class="ico" aria-hidden="true">🏢</div>
-              <div>
-                <b>Atendimento para construtoras</b>
-                <span>Obras residenciais, comerciais e reformas em geral.</span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="ico" aria-hidden="true">🧱</div>
-              <div>
-                <b>Pós-obra com padrão</b>
-                <span>Remoção de resíduos e acabamento pronto pra entrega.</span>
-              </div>
-                    </div>
-                    
-</div>
-
-
-</div>
-
-
-</div>
-
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="section services" id="servicos">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Especialistas em Limpeza Pós-Obra</h2>
-          <p>Escolha o serviço ideal e, se precisar, montamos um plano contínuo para manter seu ambiente sempre em dia.</p>
-        </div>
-        <a class="btn btn-primary" href="#orcamento">Fazer orçamento</a>
-      </div>
-
-      <div class="grid services-grid">
-        <div class="service">
-          <div class="icon2" aria-hidden="true">🏗️</div>
-          <div>
-            <h3>Limpeza Pós-Obra</h3>
-            <p>Remoção de resíduos, cimento, rejunte, tinta, poeira fina e sujeiras da obra.</p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="icon2" aria-hidden="true">🪟</div>
-          <div>
-            <h3>Limpeza Final de Entrega</h3>
-            <p>Acabamento profissional para apartamentos, casas e salas comerciais.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div class="icon2" aria-hidden="true">🧼</div>
-          <div>
-            <h3>Limpeza para Construtoras</h3>
-            <p>Atendimento para obras residenciais, comerciais e empreendimentos.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div class="icon2" aria-hidden="true">🏢</div>
-          <div>
-            <h3>Limpeza Pós-Reforma</h3>
-            <p>Ideal para pequenas reformas, arquitetos e obras rápidas.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Works -->
-  <section class="section" id="trabalhos">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Trabalhos realizados</h2>
-        </div>
-        <span class="pill" style="background: rgba(11,87,208,.08); color: var(--black); border-color: rgba(11,87,208,.18);">
-          📍 Florianópolis e região
-        </span>
-      </div>
-
-      <div class="grid portfolio-grid">
-        <article class="work">
-          <div class="ph" aria-label="Foto de trabalho 2"><img src="imagens/posobra02.jpeg" alt=""></div>
-          <div class="info">
-            <b>Limpeza final de entrega</b>
-            <small>Acabamento profissional para entrega do imóvel.</small>
-          </div>
-        </article>
-
-        <article class="work">
-          <div class="ph" aria-label="Foto de trabalho 3"><img src="imagens/faxina.jpeg" alt=""></div>
-          <div class="info">
-            <b>Pós-reforma residencial</b>
-            <small>Remoção de resíduos e finalização completa do ambiente.</small>
-          </div>
-        </article>
-
-        <article class="work">
-          <div class="ph" aria-label="Foto de trabalho 5"><img src="imagens/pos-obra.jpeg" alt=""></div>
-          <div class="info">
-            <b>Limpeza para construtoras</b>
-            <small>Atendimento para obras residenciais e comerciais.</small>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section testimonials" id="depoimentos">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Depoimentos</h2>
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Serviços Clarear</div>
+          <h2>Escolha o serviço ideal para sua necessidade.</h2>
           
         </div>
-      </div>
 
-      <div class="grid t-grid">
-        <div class="quote">
-          <div class="stars">★★★★★</div>
-          <p>“Capricho e organização impecáveis. O pós-obra ficou pronto para entrega no mesmo dia.”</p>
-          <div class="who">
-            <div class="avatar" aria-hidden="true"><img src="imagens/clarear-logo-transparente.png" alt="clarear"></div>
+        <div class="cards">
+          <article class="service-card featured">
             <div>
-              <b>Ruan da Silva</b>
-              <small>Florianópolis • Pós-obra</small>
-            </div>
-          </div>
-        </div>
+              <div class="service-icon">🏗️</div>
+              <h3>Limpeza Pós-Obra</h3>
+              <p>
+                Serviço principal da Clarear. Ideal para construtoras, reformas, apartamentos, condomínios e salas comerciais.
+              </p>
 
-        <div class="quote">
-          <div class="stars">★★★★★</div>
-          <p>“Serviço muito bem executado e acabamento impecável. O imóvel ficou pronto para entrega.”</p>
-          <div class="who">
-            <div class="avatar" aria-hidden="true"><img src="imagens/clarear-logo-transparente.png" alt="clarear"></div>
-            <div>
-              <b>Daniel Campos</b>
-              <small>São José • Pós-obra</small>
+              <ul class="mini-list">
+                <li>Limpeza fina e pesada</li>
+                <li>Remoção de poeira, rejunte e resíduos</li>
+                <li>Equipe dimensionada para entrega rápida</li>
+                <li>Foco em acabamento de alto padrão</li>
+              </ul>
             </div>
-          </div>
-        </div>
 
-        <div class="quote">
-          <div class="stars">★★★★★</div>
-          <p>“Equipe pontual e muito cuidadosa. Recomendo para quem quer padrão alto e acabamento.”</p>
-          <div class="who">
-            <div class="avatar" aria-hidden="true"><img src="imagens/clarear-logo-transparente.png" alt="clarear"></div>
+            <a class="btn btn-primary" href="pos-obra.html">Ver limpeza pós-obra</a>
+          </article>
+
+          <article class="service-card">
             <div>
-              <b>Jonatan Souza</b>
-              <small>Palhoça • Pós-obra</small>
+              <div class="service-icon">🪟</div>
+              <h3>Limpeza de Vidros</h3>
+              <p>
+                Limpeza de vidros para espaços comerciais, vitrines, fachadas baixas, clínicas, lojas e escritórios.
+              </p>
+
+              <ul class="mini-list">
+                <li>Atendimento até 2 pavimentos</li>
+                <li>Não executamos serviço de rapel</li>
+                <li>Uso de equipamento profissional</li>
+                <li>Ideal para vitrines e espaços comerciais</li>
+              </ul>
             </div>
-          </div>
+
+            <a class="btn btn-outline" href="vidros.html">Ver limpeza de vidros</a>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-icon">🏢</div>
+              <h3>Planos Mensais</h3>
+              <p>
+                Planos de limpeza recorrente para empresas que querem manter o ambiente sempre limpo e apresentável.
+              </p>
+
+              <ul class="mini-list">
+                <li>Essencial: 1 visita mensal</li>
+                <li>Profissional: 2 visitas mensais</li>
+                <li>Premium: 4 visitas mensais</li>
+                <li>Ideal para lojas, clínicas e escritórios</li>
+              </ul>
+            </div>
+
+            <a class="btn btn-outline" href="planos-mensais.html">Ver planos mensais</a>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Perguntas frequentes</h2>
-        </div>
-      </div>
-
-      <div class="faq-wrap">
-        <div class="card pad">
-          <h3 style="margin:0 0 10px;">Vocês atendem construtoras e reformas?</h3>
-          <p style="margin:0;color:rgba(11,15,26,.72);">
-            Sim, atendemos construtoras e reformas, oferecendo serviços de limpeza pós-obra e acabamento final.
+    <section class="section why" id="diferenciais">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Por que contratar a Clarear?</div>
+          <h2>Mais agilidade, mais organização e melhor acabamento na entrega.</h2>
+          <p>
+            A Clarear trabalha com foco em resultado: menos atraso, menos preocupação e mais qualidade na apresentação final do ambiente.
           </p>
         </div>
 
-        <div class="card faq-card">
-          <div class="qa">
-            <button class="q" type="button">
-              <span>Vocês atendem condomínio e empresas?</span>
-              <div class="chev">⌄</div>
-            </button>
-            <div class="a"><p>Sim. Fazemos atendimentos pontuais e também planos mensais para manter vidros e fachadas sempre em dia.</p></div>
+        <div class="why-grid">
+          <div class="why-card">
+            <span>⚡</span>
+            <strong>Entrega rápida</strong>
+            <p>Alocamos mais pessoas conforme a necessidade para acelerar a finalização do serviço.</p>
           </div>
 
-          <div class="qa">
-            <button class="q" type="button">
-              <span>O que está incluso na limpeza pós-obra?</span>
-              <div class="chev">⌄</div>
-            </button>
-            <div class="a"><p>Remoção de poeira fina, resíduos, marcas e acabamento final. Ajustamos o escopo conforme o nível de obra e o tamanho do ambiente.</p></div>
+          <div class="why-card">
+            <span>🏗️</span>
+            <strong>Especialistas em pós-obra</strong>
+            <p>Foco em limpeza final, acabamento e preparação do ambiente para entrega.</p>
           </div>
 
-          <div class="qa">
-            <button class="q" type="button">
-              <span>Vocês levam todos os produtos e equipamentos?</span>
-              <div class="chev">⌄</div>
-            </button>
-            <div class="a"><p>Sim. Trabalhamos com materiais e equipamentos profissionais, incluindo os necessários para vidros e ACM com padrão de qualidade.</p></div>
+          <div class="why-card">
+            <span>📋</span>
+            <strong>Orçamento objetivo</strong>
+            <p>Avaliamos metragem, nível de sujeira, acesso e prazo para montar a proposta correta.</p>
           </div>
 
-          <div class="qa">
-            <button class="q" type="button">
-              <span>Como calculam o orçamento?</span>
-              <div class="chev">⌄</div>
-            </button>
-            <div class="a"><p>Consideramos metragem, nível de sujeira/resíduo, tipo de superfície (vidro/ACM), acesso e frequência (pontual ou plano mensal).</p></div>
-          </div>
-
-          <div class="qa">
-            <button class="q" type="button">
-              <span>Em quanto tempo consigo atendimento?</span>
-              <div class="chev">⌄</div>
-            </button>
-            <div class="a"><p>Depende da agenda e do tipo de serviço. Normalmente conseguimos encaixes rápidos, especialmente para planos mensais e recorrência.</p></div>
+          <div class="why-card">
+            <span>⭐</span>
+            <strong>Alto padrão</strong>
+            <p>Serviço pensado para imóveis, empresas e ambientes que precisam de boa apresentação.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Budget -->
-  <section class="section budget" id="orcamento">
-    <div class="container">
-      <div class="section-title">
-        <div>
-          <h2>Solicitar orçamento</h2>
-          <p>Preencha o formulário e enviaremos uma proposta. Você também pode clicar no WhatsApp e falar direto.</p>
+    <section class="section" id="trabalhos">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Trabalhos realizados</div>
+          <h2>Ambientes limpos, organizados e prontos para uso.</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="work">
+            <div class="work-photo">
+              <img src="imagens/posobra02.jpeg" alt="Limpeza final de obra">
+            </div>
+            <div class="work-info">
+              <strong>Limpeza final de entrega</strong>
+              <p>Acabamento profissional para entrega do imóvel.</p>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-photo">
+              <img src="imagens/faxina.jpeg" alt="Limpeza pós-reforma residencial">
+            </div>
+            <div class="work-info">
+              <strong>Pós-reforma residencial</strong>
+              <p>Remoção de resíduos e organização completa do ambiente.</p>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-photo">
+              <img src="imagens/pos-obra.jpeg" alt="Limpeza para construtoras">
+            </div>
+            <div class="work-info">
+              <strong>Limpeza para construtoras</strong>
+              <p>Atendimento para obras residenciais e comerciais.</p>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="grid budget-grid">
-        <div class="form">
-          <h3>Fale com a Clarear</h3>
-          <p>Quanto mais detalhes, mais rápido e preciso fica o orçamento.</p>
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Precisa entregar uma obra ou manter sua empresa sempre limpa?</h2>
+            <p>
+              Fale com a Clarear e solicite uma proposta para limpeza pós-obra, vidros ou plano mensal.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a class="btn btn-light" href="#orcamento">Solicitar orçamento</a>
+            <a class="btn btn-primary" id="ctaWhats" href="#">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form-section" id="orcamento">
+      <div class="container">
+        <div class="form-grid">
+          <div class="contact-card">
+            <div class="eyebrow">Orçamento rápido</div>
+            <h2>Conte o que você precisa.</h2>
+            <p>
+              Preencha os dados e envie direto para o WhatsApp da Clarear. Quanto mais informações você mandar, mais rápido conseguimos montar a proposta.
+            </p>
+
+            <ul class="contact-list">
+              <li><span class="check">✓</span> Atendimento em Florianópolis e região</li>
+              <li><span class="check">✓</span> Pós-obra, vidros e planos mensais</li>
+              <li><span class="check">✓</span> Proposta personalizada por serviço</li>
+            </ul>
+          </div>
 
           <form id="quoteForm">
             <div class="fields">
               <div class="field">
                 <label for="name">Nome</label>
-                <input id="name" name="name" placeholder="Seu nome" required />
+                <input id="name" name="name" placeholder="Seu nome" required>
               </div>
 
               <div class="field">
                 <label for="phone">WhatsApp</label>
-                <input id="phone" name="phone" placeholder="(DDD) 9xxxx-xxxx" required />
+                <input id="phone" name="phone" placeholder="(48) 9xxxx-xxxx" required>
               </div>
 
               <div class="field">
                 <label for="city">Cidade</label>
-                <input id="city" name="city" placeholder="Ex: Florianópolis" />
+                <input id="city" name="city" placeholder="Ex: Florianópolis">
               </div>
 
               <div class="field">
                 <label for="service">Serviço</label>
                 <select id="service" name="service" required>
-                  <option value="" selected disabled>Selecione…</option>
+                  <option value="" selected disabled>Selecione</option>
                   <option>Limpeza Pós-Obra</option>
-                  <option>Faxina / Limpeza de Rotina</option>
+                  <option>Limpeza de Vidros Comerciais</option>
+                  <option>Plano Mensal de Limpeza Comercial</option>
                 </select>
               </div>
 
               <div class="field full">
                 <label for="details">Detalhes</label>
-                <textarea id="details" name="details" placeholder="Ex: metragem aproximada, tipo de local (apto/loja), nível de sujeira, acesso, frequência desejada…"></textarea>
+                <textarea id="details" name="details" placeholder="Ex: metragem, tipo de local, prazo desejado, se é obra grande, condomínio, loja, clínica, escritório..."></textarea>
               </div>
             </div>
 
-            <div class="actions">
-              <button class="btn btn-primary" type="submit" onclick="gtag_report_conversion();">Enviar no WhatsApp</button>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Enviar no WhatsApp</button>
+              <span class="small">Você será direcionado para o WhatsApp.</span>
             </div>
           </form>
         </div>
-
-        <aside class="offer">
-          <div>
-            <h3>Por que a Clarear?</h3>
-            <ul>
-              <li><span class="check">✓</span> <span><b>Acabamento premium</b> com foco em detalhe e apresentação.</span></li>
-              <li><span class="check">✓</span> <span><b>Equipe especializada</b> em limpeza pós-obra e acabamento final.</span></li>
-              <li><span class="check">✓</span> <span><b>Atendimento para construtoras</b>, reformas e empresas.</span></li>
-              <li><span class="check">✓</span> <span><b>Atendimento prático</b> e comunicação rápida via WhatsApp.</span></li>
-            </ul>
-          </div>
-
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn btn-primary" id="whatscta" href="#" onclick="return gtag_report_conversion(this.href);">Chamar no WhatsApp</a>
-            <a class="btn btn-ghost" href="#trabalhos">Ver portfólio</a>
-          </div>
-        </aside>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer" id="contato">
+  </main>
+
+  <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="foot-card">
-          <b>Clarear</b>
-          <div>Limpeza Pós-Obra • Faxinas • Planos mensais</div>
-          <div style="margin-top:10px">📍 Atendimento em Florianópolis, São José, Palhoça, Biguaçu, Balneário Camboriú e toda Santa Catarina.</div>
-          <div style="margin-top:10px">📞 WhatsApp: <a href="#" id="whatsFooter">clique para conversar</a></div>
-          <div class="fine">© <span id="year"></span> Clarear. Todos os direitos reservados.</div>
+        <div>
+          <strong>Clarear Limpezas</strong>
+          <p>
+            Limpeza pós-obra, limpeza de vidros comerciais e planos mensais para empresas em Florianópolis, São José, Palhoça, Biguaçu e região.
+          </p>
+          <div class="copy">© <span id="year"></span> Clarear. Todos os direitos reservados.</div>
         </div>
 
-        <div class="foot-card">
-          <b>Atendimento</b>
-          <div style="display:grid; gap:8px;">
-            <div>• Orçamentos e agendamentos via WhatsApp</div>
-            <div>• Planos mensais para empresas</div>
-            <div>• Pós-obra e rotinas com padrão profissional</div>
-          </div>
-         
+        <div>
+          <strong>Contato</strong>
+          <p>WhatsApp: <a id="footerWhats" href="#">clique para conversar</a></p>
+          <p style="margin-top:8px;">Atendimento para obras, empresas, condomínios e imóveis de alto padrão.</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <div class="whats" aria-label="WhatsApp">
-    <div class="bubble">Quer orçamento rápido? Chama no WhatsApp 👇</div>
-    <a class="fab" id="whatsFab"
-   href="https://wa.me/5548988395264?text=Olá!%20Vim%20pelo%20site%20da%20Clarear%20e%20gostaria%20de%20solicitar%20um%20orçamento."
-   aria-label="Chamar no WhatsApp"
-   onclick="return gtag_report_conversion(this.href);">💬</a>
-  
+  <div class="whats">
+    <div class="whats-bubble">Orçamento rápido pelo WhatsApp</div>
+    <a class="whats-btn" id="whatsFab" href="#" aria-label="Chamar no WhatsApp">💬</a>
   </div>
 
   <script>
-    // ===== CONFIGURE SEU WHATSAPP AQUI =====
-    // Formato: 55 + DDD + número (sem espaços)
-    const WHATS_NUMBER = "5548988395264"; // ex: 5548999999999
+    const WHATS_NUMBER = "5548988395264";
 
-    // ====== Smooth scroll for anchors ======
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener("click", (e) => {
-        const href = a.getAttribute("href");
-        if (!href || href === "#") return;
-        const target = document.querySelector(href);
-        if (!target) return;
-        e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    });
-
-    // ====== Mobile drawer ======
-    const drawer = document.getElementById("drawer");
-    const openDrawer = document.getElementById("openDrawer");
-    const closeDrawer = document.getElementById("closeDrawer");
-
-    function setDrawer(open){
-      drawer.classList.toggle("open", open);
-      drawer.setAttribute("aria-hidden", open ? "false" : "true");
-      document.body.style.overflow = open ? "hidden" : "";
+    function waLink(message) {
+      return "https://wa.me/" + WHATS_NUMBER + "?text=" + encodeURIComponent(message);
     }
 
-    openDrawer?.addEventListener("click", () => setDrawer(true));
-    closeDrawer?.addEventListener("click", () => setDrawer(false));
-    drawer?.addEventListener("click", (e) => {
-      if (e.target === drawer) setDrawer(false);
-    });
-    document.querySelectorAll(".drawerLink").forEach(l => {
-      l.addEventListener("click", () => setDrawer(false));
-    });
+    function setWhatsLinks() {
+      const message = "Olá! Vim pelo site da Clarear e gostaria de solicitar um orçamento.";
+      const link = waLink(message);
 
-    // ====== FAQ accordion ======
-    document.querySelectorAll(".qa .q").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const qa = btn.closest(".qa");
-        const isOpen = qa.classList.contains("open");
-        // close others
-        document.querySelectorAll(".qa.open").forEach(x => x.classList.remove("open"));
-        // toggle current
-        if (!isOpen) qa.classList.add("open");
-      });
-    });
-
-    // ====== WhatsApp helper ======
-    function waLink(message){
-      const base = "https://wa.me/" + WHATS_NUMBER;
-      return base + "?text=" + encodeURIComponent(message);
-    }
-
-    function bindWhatsLinks(){
-      const msg = "Olá! Vim pelo site da Clarear. Quero um orçamento, por favor.";
-      const link = waLink(msg);
-
-      const ids = ["whatsFab","whatsFooter","whatsCta"];
-      ids.forEach(id => {
+      ["heroWhats", "ctaWhats", "footerWhats", "whatsFab"].forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
-        el.setAttribute("href", link);
-        el.setAttribute("target", "_blank");
-        el.setAttribute("rel", "noopener");
+
+        el.href = link;
+        el.target = "_blank";
+        el.rel = "noopener";
+        el.onclick = function() {
+          return gtag_report_conversion(link);
+        };
       });
     }
-    bindWhatsLinks();
 
-    // ====== Quote form -> WhatsApp ======
+    setWhatsLinks();
+
     const form = document.getElementById("quoteForm");
-    form?.addEventListener("submit", (e) => {
+
+    form.addEventListener("submit", function(e) {
       e.preventDefault();
 
       const name = document.getElementById("name").value.trim();
@@ -1130,22 +1161,57 @@ function gtag_report_conversion(url) {
       const service = document.getElementById("service").value.trim();
       const details = document.getElementById("details").value.trim();
 
-      const lines = [
-        "Olá! Vim pelo site da Clarear e quero um orçamento.",
+      const message = [
+        "Olá! Vim pelo site da Clarear e gostaria de solicitar um orçamento.",
         "",
-        `Nome: ${name}`,
-        `WhatsApp: ${phone}`,
-        city ? `Cidade: ${city}` : null,
-        `Serviço: ${service}`,
-        details ? `Detalhes: ${details}` : null
-      ].filter(Boolean);
-      gtag_report_conversion(url);
-      const link = waLink(lines.join("\n"));
+        "Nome: " + name,
+        "WhatsApp: " + phone,
+        city ? "Cidade: " + city : "",
+        "Serviço: " + service,
+        details ? "Detalhes: " + details : ""
+      ].filter(Boolean).join("\n");
+
+      const link = waLink(message);
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18135353188/ETkPCPahv6YcEOSOzsdD'
+      });
+
       window.open(link, "_blank", "noopener");
     });
 
-    // ====== Year ======
+    const drawer = document.getElementById("drawer");
+    const openDrawer = document.getElementById("openDrawer");
+    const closeDrawer = document.getElementById("closeDrawer");
+
+    openDrawer.addEventListener("click", () => {
+      drawer.classList.add("open");
+      document.body.style.overflow = "hidden";
+    });
+
+    closeDrawer.addEventListener("click", () => {
+      drawer.classList.remove("open");
+      document.body.style.overflow = "";
+    });
+
+    drawer.addEventListener("click", e => {
+      if (e.target === drawer) {
+        drawer.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+    });
+
+    document.querySelectorAll(".drawerLink").forEach(link => {
+      link.addEventListener("click", () => {
+        drawer.classList.remove("open");
+        document.body.style.overflow = "";
+      });
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
+
+
