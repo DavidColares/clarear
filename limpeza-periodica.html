@@ -622,7 +622,7 @@ footer p{
 
   .hamburger{display:block;}
 
-  .brand img{width:158px;height:70px;object-fit:contain;}
+  .brand img{width:220px;height:auto;object-fit:contain;}
 
   .hero-video{min-height:620px;}
 
@@ -656,7 +656,7 @@ footer p{
 
   .nav{padding:14px 0;}
 
-  .brand img{width:148px;height:66px;object-fit:contain;}
+  .brand img{width:200px;height:auto;object-fit:contain;}
 
   .hero-video{min-height:600px;}
 
@@ -710,11 +710,10 @@ header.header{
 }
 
 .brand img{
-  width:86px;
-  height:70px;
-  object-fit:contain;
-  display:block;
-  flex:0 0 auto;
+    width: 150px;
+    height:auto;
+    object-fit:contain;
+    display:block;
 }
 
 .logo-text{
@@ -960,7 +959,7 @@ header.header{
   .hamburger{display:flex !important;}
   .nav{min-height:82px; padding:8px 0;}
   .brand{min-width:auto;}
-  .brand img{width:76px; height:62px;}
+  .brand img{width:150px; height:auto;}
   .logo-text strong{font-size:14px;}
   .logo-text div{font-size:12px;}
   .portfolio-grid,
@@ -971,7 +970,7 @@ header.header{
 @media(max-width:640px){
   .container{padding-left:18px; padding-right:18px;}
   .nav{min-height:76px;}
-  .brand img{width:70px; height:58px;}
+  .brand img{width:150px; height:auto;}
   .hero-actions{flex-direction:column; align-items:stretch;}
   .hero-actions .btn{width:100%;}
   .portfolio-grid,
@@ -991,7 +990,7 @@ header.header{
   <div class="container">
     <div class="nav">
 
-      <a href="index.html" class="brand">
+      <a href="home.html" class="brand">
         <img src="imagens/clarear-logo-transparente.png" alt="Clarear Limpezas">
         <div class="logo-text">
           <strong>Clarear</strong>
@@ -1000,7 +999,7 @@ header.header{
       </a>
 
       <nav class="menu">
-        <a href="index.html">Home</a>
+        <a href="home.html">Home</a>
         <a href="pos_obra.html">Pós-Obra</a>
         <a href="limpeza-de-vidros.html">Limpeza de Vidros</a>
         <a href="limpeza-periodica.html" class="active">Planos Mensais</a>
@@ -1027,11 +1026,11 @@ header.header{
       <button class="close" id="closeMenu" aria-label="Fechar menu">×</button>
     </div>
 
-    <a href="index.html">Home</a>
+    <a href="home.html">Home</a>
     <a href="pos_obra.html">Pós-Obra</a>
     <a href="limpeza-de-vidros.html">Limpeza de Vidros</a>
     <a href="limpeza-periodica.html" class="active">Planos Mensais</a>
-    <a href="https://wa.me/5548996328509?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <a href="https://wa.me/5548988395264?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear." target="_blank" rel="noopener">Falar no WhatsApp</a>
   </div>
 </div>
 <section class="hero-video">
@@ -1055,7 +1054,7 @@ header.header{
       <div class="hero-actions">
         <a href="#planos" class="btn btn-primary">Ver planos mensais</a>
 
-        <a href="https://wa.me/5548996328509?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear."
+        <a href="https://wa.me/5548988395264?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear."
            target="_blank"
            class="btn btn-outline">
           Falar no WhatsApp
@@ -1259,7 +1258,7 @@ header.header{
       <div class="cta-actions">
         <a href="#orcamento" class="btn btn-outline">Solicitar plano mensal</a>
 
-        <a href="https://wa.me/5548996328509?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear."
+        <a href="https://wa.me/5548988395264?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear."
            target="_blank"
            class="btn btn-primary">
           WhatsApp
@@ -1386,7 +1385,7 @@ header.header{
 <div class="whats">
   <div class="whats-bubble">Solicite seu plano mensal</div>
   <a class="whats-btn"
-     href="https://wa.me/5548996328509?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear."
+     href="https://wa.me/5548988395264?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20os%20planos%20mensais%20de%20limpeza%20da%20Clarear."
      target="_blank"
      aria-label="Falar no WhatsApp">
     ☎
@@ -1442,7 +1441,7 @@ Metragem aproximada: ${metragem}
 Mensagem:
 ${mensagem}`;
 
-  const numero = "5548996328509";
+  const numero = "5548988395264";
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
   window.open(url, '_blank');
