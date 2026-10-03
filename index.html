@@ -38,6 +38,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <link rel="stylesheet" href="css/morph.css">
 
   <script type="application/ld+json">
   {
@@ -113,42 +115,97 @@
 
   <main>
 
-    <section class="hero" id="inicio">
+    <section class="hero hero-x" id="inicio">
       <div class="container">
-        <div class="hero-grid">
-          <div class="hero-text">
+        <div class="hero-x-top">
+          <div>
             <div class="kicker">Construtoras &amp; grandes empreendimentos</div>
-
-            <h1>Limpeza pós-obra para entregas que não podem atrasar.</h1>
-
-            <p class="lede">
-              A Clarear é especializada em limpeza pós-obra para construtoras e incorporadoras em Florianópolis e Santa Catarina. Equipe alocada por diária durante a execução ou pacote fechado para a entrega final, sem espaço para improviso.
-            </p>
-
-            <div class="actions">
-              <a class="btn btn-accent" href="#orcamento">Solicitar proposta</a>
-              <a class="btn btn-outline" data-whats="Olá! Vim pelo site da Clarear e gostaria de solicitar uma proposta para o meu empreendimento." target="_blank" rel="noopener">Falar no WhatsApp</a>
-            </div>
-
-            <div class="stat-row">
-              <div class="stat">
-                <strong>Diária ou pacote fechado</strong>
-                <span>Equipe durante a obra ou limpeza final de entrega</span>
-              </div>
-              <div class="stat">
-                <strong>Também atende condomínios</strong>
-                <span>Equipe fixa para prédios comerciais e condomínios</span>
-              </div>
-              <div class="stat">
-                <strong>Santa Catarina</strong>
-                <span>Grandes obras em outros estados sob consulta</span>
-              </div>
-            </div>
+            <h1>Limpeza pós-obra para entregas que <em>não podem atrasar.</em></h1>
           </div>
 
-          <div class="hero-frame">
-            <img src="imagens/PHOTO-2026-06-03-20-26-02.jpg" alt="Equipe Clarear realizando limpeza pós-obra em empreendimento de alto padrão em Florianópolis">
-            <span class="tag">Entrega Clarear</span>
+          <div class="hero-x-side">
+            <p class="lede">
+              Especialista em pós-obra para construtoras e incorporadoras em Florianópolis e Santa Catarina. Equipe alocada por diária durante a execução ou pacote fechado para a entrega final.
+            </p>
+            <div class="actions">
+              <a class="btn btn-accent magnet" href="#orcamento">Solicitar proposta</a>
+              <a class="btn btn-outline magnet" data-whats="Olá! Vim pelo site da Clarear e gostaria de solicitar uma proposta para o meu empreendimento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ba" id="ba">
+          <img class="ba-img ba-after" src="imagens/depois.png" alt="Ambiente entregue após a limpeza pós-obra da Clarear" draggable="false">
+          <div class="ba-before">
+            <img class="ba-img" src="imagens/antes.png" alt="Mesmo ambiente com poeira e resíduos de obra, antes da limpeza" draggable="false">
+          </div>
+          <span class="ba-label ba-l-before">Obra concluída</span>
+          <span class="ba-label ba-l-after">Entrega Clarear</span>
+          <div class="ba-handle" aria-hidden="true"><span><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M8 5l-6 6 6 6M14 5l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Arraste para comparar o antes e o depois da limpeza">
+          <span class="ba-hint">Arraste para limpar</span>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat">
+            <strong>Diária ou pacote fechado</strong>
+            <span>Equipe durante a obra ou limpeza final de entrega</span>
+          </div>
+          <div class="stat">
+            <strong>Também atende condomínios</strong>
+            <span>Equipe fixa para prédios comerciais e condomínios</span>
+          </div>
+          <div class="stat">
+            <strong>Santa Catarina</strong>
+            <span>Grandes obras em outros estados sob consulta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Limpeza pós-obra</span><i></i><span>Equipe alocada</span><i></i><span>Pacote fechado</span><i></i><span>Entrega no prazo</span><i></i><span>Condomínios</span><i></i><span>Florianópolis &amp; SC</span><i></i>
+        <span>Limpeza pós-obra</span><i></i><span>Equipe alocada</span><i></i><span>Pacote fechado</span><i></i><span>Entrega no prazo</span><i></i><span>Condomínios</span><i></i><span>Florianópolis &amp; SC</span><i></i>
+      </div>
+    </div>
+
+    <section class="scrub" id="processo">
+      <div class="scrub-pin">
+        <div class="container scrub-grid">
+          <div class="scrub-left">
+            <div class="kicker">Da obra à chave</div>
+            <h2>Quatro etapas até a entrega.</h2>
+            <div class="scrub-meter" aria-hidden="true"><span></span></div>
+            <ol class="scrub-steps">
+              <li class="on"><b>01</b> Levantamento</li>
+              <li><b>02</b> Limpeza pesada</li>
+              <li><b>03</b> Limpeza fina</li>
+              <li><b>04</b> Vistoria e entrega</li>
+            </ol>
+          </div>
+
+          <div class="scrub-stage">
+            <div class="scrub-card on">
+              <span class="scrub-n">01</span>
+              <h3>Levantamento da obra</h3>
+              <p>Metragem, fase, prazo e acessos. Dimensionamos a equipe e definimos o modelo: diária ou pacote fechado.</p>
+            </div>
+            <div class="scrub-card">
+              <span class="scrub-n">02</span>
+              <h3>Limpeza pesada</h3>
+              <p>Remoção de entulho fino, resíduos, respingos de tinta e rejunte, antes de qualquer acabamento fino.</p>
+            </div>
+            <div class="scrub-card">
+              <span class="scrub-n">03</span>
+              <h3>Limpeza fina</h3>
+              <p>Poeira fina, vidros, esquadrias, louças e metais. O ambiente fica pronto para ser usado.</p>
+            </div>
+            <div class="scrub-card">
+              <span class="scrub-n">04</span>
+              <h3>Vistoria e entrega</h3>
+              <p>Conferência final com a construtora, ajustes pontuais e entrega das chaves sem pendência de limpeza.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -400,5 +457,7 @@
   </div>
 
   <script src="js/site.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/morph.js"></script>
 </body>
 </html>
